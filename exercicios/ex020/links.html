@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores Personalizados
+        # = id
+        . = class
+        : = pseudo-classe
+        :: = pseudo-elemento
+        > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited{/*pseudo-classe*/
+            color: green;
+        }
+        a:hover{ /*pseudo-classe*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{ /*pseudo-classe*/
+            color: yellow;
+        }
+        /*a::after{ /*pseudo-elemento
+            content: '[Link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }*/
+        .especial{
+            background-color: crimson;
+        }
+        .especial::before{/*pseudo-elemento*/
+            content: '♫';
+        }
+        .especial::after{ /*pseudo-elemento*/
+            content: '♬';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/" target="_blank" rel="next">Visite o github</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="next" class="especial">Visite o Youtube</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="next">Visite o Linkedin</a></li>
+    </ul>
+</body>
+</html>

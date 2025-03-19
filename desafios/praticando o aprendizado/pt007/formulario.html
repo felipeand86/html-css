@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-image: linear-gradient(90deg, yellow, red);
+        }
+    </style>
+</head>
+<body>
+    <h1>Questões do formulário</h1>
+    <h2>Responda as seguintes Questões</h2>
+    <section>
+        <p>Qual o seu nome?</p>
+        <form>
+            <input type="text" id="p1" name="pergunta1">
+        </form>
+    </section>
+    <section>
+        <p>Qual o seu email?</p>
+        <form>
+            <input type="email" id="p2" name="pergunta2">
+        </form>
+    </section>
+    <section>
+        <p>Qual a sua idade?</p>
+        <form>
+            <input type="number" id="p3" name="pergunta3">
+        </form>
+    </section>
+    <section>
+        <p>Quais dessas linguagens não é linguagem de programação?</p>
+        <form>
+            <input type="radio" value="HTML" id="p4a" name="pergunta4">
+            <label for="p4a">HTML</label><br>
+            <input type="radio" value="JavaScript" id="p4b" name="pergunta4">
+            <label for="p4b">JavaScript</label><br>
+            <input type="radio" value="Java" id="p4c" name="pergunta4">
+            <label for="p4c">Java</label><br>
+            <input type="radio" value="C++" id="p4d" name="pergunta4">
+            <label for="p4d">C++</label><br>
+        </form>
+    </section>
+    <p>testendo a ausencia de seção</p>
+    <label for="nome">Nome</label><br>
+    <input type="text" name="nome" id="nome"><br>
+    <label for="peso">Qual seu peso</label><br>
+    <input type="range" name="peso" id="peso" min="0" max="300">
+
+    <label for="estado">Estado</label>
+    <select name="estado" id="estado">
+        <option value=""></option>
+        <option value="Sp">SP</option>
+        <option value="Rj">RJ</option>
+        <option value="Mg">MG</option>
+        <option value="Es">ES</option>
+        <option value="Pr">PR</option>
+        <option value="Ba">BA</option>
+    </select>
+
+</body>
+</html>

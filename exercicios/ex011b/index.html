@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas 2</title>
+</head>
+<body>
+    <p>Testando as imagens dinamicas para ajustar ao tamnho de tela</p>
+
+    <picture>
+        <source media="(max-width:350px)" srcset="imagens/foto-pp.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reprodução de audio</h1>
+    <p>Agora o site também irá reproduzir audio</p>
+    <p>AngraMod1</p>
+    <audio src="midia/AngraMod1.mp3" controls></audio>
+    <p>Sonic</p>
+    <audio src="midia/SonicGreenHillZone.mp3" controls autoplay></audio>
+    <p>Audio teste no name</p>
+    <audio src="midia/AUD00003.3gp" controls></audio>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 350px;
+            height: 100px;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        col.amarelo{
+            background-color: yellow;
+        }
+        col.vermelho{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <table>
+        <colgroup>
+        <col class="amarelo">
+        <col class="vermelho" span="2">
+        <col class="amarelo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Patricia Antunes</td>
+            <td>F</td>
+            <td>42</td>
+            <td>Coordenadora</td>
+        </tr>
+        <tr>
+            <td>João da Silva</td>
+            <td>M</td>
+            <td>50</td>
+            <td>Supervisor</td>
+        </tr>
+        <tr>
+            <td>Hélio Garcia</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Mariana Souza</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Vendedora</td>
+        </tr>
+    </table>
+</body>
+</html>

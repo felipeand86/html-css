@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f2f2f2;
+ transition: background-color 0.5s ease;
+}
+
+header {
+ background-color: #333;
+ color: #fff;
+ padding: 20px;
+ text-align: center;
+}
+
+main {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 20px;
+}
+
+#jogos {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.jogo {
+ background-color: #fff;
+ padding: 20px;
+ margin: 10px;
+ border: 1px solid #ddd;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+ background-color: #4CAF50;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+button:hover {
+ background-color: #3e8e41;
+}

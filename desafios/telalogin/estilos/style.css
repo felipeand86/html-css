@@ -2,6 +2,51 @@
 
 /*
     paleta de cores
-    verde: 
-    lilas: 
+    verde: #49a08d
+    lilas: #5f2c82
 */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.527);
+}
+
+section#login > div#imagem{
+    display: block;
+    background: url('../imagens/tl.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}

@@ -28,16 +28,16 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 470px;
     border-radius: 20px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.527);
     transition: width .4s, heigth .4s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem{
@@ -60,10 +60,23 @@ div#formulario > h1{
 
 div#formulario > p{
     font-size: 0.8em;
+    margin: 10px 0px;    
 }
 
 div.campo > label{
     display: none;
+}
+
+div.campo > input{
+    background-color: lightgrey;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    transform: translateY(-7px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit] {

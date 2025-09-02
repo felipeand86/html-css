@@ -15,6 +15,7 @@ Grandes telas: Acima de 1200px
     }
     section#login{
         width: 80vw;
+        height: 270px;
     }
     section#login > div#imagem{
         float: left;
@@ -25,6 +26,13 @@ Grandes telas: Acima de 1200px
         float: right;
         width: 70%;
     }
+    div#formulario > h1{
+        font-size: 1.5em;
+    }
+    div#formulario > p{
+        font-size: 1em;
+        margin: 20px 0px;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -32,7 +40,8 @@ Grandes telas: Acima de 1200px
         background-image: linear-gradient(to top, #49a08d, #5f2c82);
     }
     section#login{
-        width: 950px;   
+        width: 950px;
+        height: 310px;   
     }
     section#login > div#imagem{
         float: right;
@@ -47,7 +56,8 @@ Grandes telas: Acima de 1200px
         font-size: 2em;
     }
     div#formulario > p{
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin: 20px 0px;
     }
 }
 
